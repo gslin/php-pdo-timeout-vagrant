@@ -11,9 +11,9 @@ Vagrant.configure(2) do |config|
     end
 
     config.vm.define "php" do |php|
-        db.vm.box = "freebsd/FreeBSD-10.2-RELEASE"
-        db.vm.hostname = "php"
-        db.vm.provision "shell", path: "php.sh"
-        db.vm.network "private_network", ip: "192.168.50.102"
+        php.vm.box = "freebsd/FreeBSD-10.2-RELEASE"
+        php.vm.hostname = "php"
+        php.vm.provision "shell", path: "php.sh"
+        php.vm.network "private_network", ip: "192.168.50.102"
     end
 end
