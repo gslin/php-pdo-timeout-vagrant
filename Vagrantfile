@@ -16,10 +16,10 @@ Vagrant.configure(2) do |config|
         db.vm.network "private_network", ip: "192.168.50.102"
     end
 
-    config.vm.define "client" do |db|
-        db.vm.box = "ubuntu/trusty64"
-        db.vm.hostname = "client"
-        db.vm.provision "shell", path: "init.sh"
-        db.vm.network "private_network", ip: "192.168.50.103"
+    config.vm.define "client" do |c|
+        c.vm.box = "ubuntu/trusty64"
+        c.vm.hostname = "client"
+        c.vm.provision "shell", path: "init.sh"
+        c.vm.network "private_network", ip: "192.168.50.103"
     end
 end
