@@ -1,7 +1,7 @@
 Overview
 --------
 
-This <code>Vagrantfile</code> will create a database server and a PHP server, to test PHP PDO timeout issue.
+This <code>Vagrantfile</code> are used to test PHP mysql timeout issue.
 
 Tested on Vagrant 1.7.4 (w/ VirtualBox).
 
